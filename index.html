@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صل على النبي ﷺ</title>
+ <style>
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  text-align: center;
+  padding: 50px;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+.dark-mode .container {
+  background-color: #333;
+}
+
+.rope {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.rope:hover {
+  transform: rotate(10deg);
+}
+ </style>
+</head>
+<body>
+  <div class="rope" onclick="toggleMode()">🧵</div>
+
+  <div class="container">
+    <h1>🤍 صل على النبي ﷺ</h1>
+    <p id="salawat">اضغط الزر لتبدأ بالصلاة عليه ✨</p>
+    <button onclick="sendSalawat()">صل على النبي</button>
+    <p>عدد الصلوات: <span id="counter">0</span></p>
+  </div>
+
+  <script src="script (task3).js"></script>
+</body>
+</html>
